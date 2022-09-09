@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+
+    <style>
+        body{
+            background-color: rgb(214, 214, 118);
+        }
+        .welcome{
+            text-align: center;
+            color:red;
+            font-size: 60px;
+        }
+        .text_edit{
+            text-align: center;
+            color:rgb(207, 134, 134);
+            font-size: 40px;
+        }
+        .output{
+            margin-top: 100px;
+      margin-left:100px;
+            font-size:20px;
+<!--            color: rgb(83, 86, 226);-->
+           color: rgb(187, 23, 86);
+               font-family:'Dancing Script', 'cursive' ;
+        }
+
+        .container_{
+             display: flex;
+             flex-direction: row;
+        }
+        .details{
+            margin-left: 400px;
+        }
+        .container{
+            width:200px;
+            height:200px;
+            position: absolute;
+            top:60px;
+            left:60px;
+            background-color: blue;
+            transform: rotate(45deg);
+            animation-name: p;
+            animation-iteration-count: infinite;
+            animation-duration: 6s;
+            position: relative;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        @keyframes p{
+            0%{
+                left:60px;
+                transform: rotate(45deg);
+            }
+
+         12%{
+              left:260px;
+                transform: rotate(90deg);
+                background-color: burlywood;
+            }
+23%{ left:460;
+transform:rotate(135deg);
+background-color: rgb(98, 149, 243);
+}
+40%{
+    left:660px;
+    transform:rotate(180deg);
+    background-color: rgb(226, 78, 25);
+}
+60%{
+    left:860px;
+    transform: rotate(225deg);
+    background-color: rgb(57, 161, 161);
+}
+80%{
+    left:1060px;
+    transform: rotate(270px);
+    background-color: darkgoldenrod;
+}
+100%{
+    left:60px;
+    transform: rotate(315deg);
+    background-color: rgb(63, 190, 63);
+}
+        }
+
+
+        .containers{
+            width:200px;
+            height:200px;
+            position: absolute;
+            top:60px;
+            left:60px;
+            background-color: blue;
+            transform: rotate(45deg);
+            animation-name: ps;
+
+            animation-iteration-count: infinite;
+            animation-duration: 6s;
+            animation-direction:reverse;
+            position: relative;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        @keyframes ps{
+            0%{
+                left:60px;
+                transform: rotate(45deg);
+            }
+
+         12%{
+              left:260px;
+                transform: rotate(90deg);
+                background-color: burlywood;
+            }
+23%{ left:460;
+transform:rotate(135deg);
+background-color: rgb(98, 149, 243);
+}
+40%{
+    left:660px;
+    transform:rotate(180deg);
+    background-color: rgb(226, 78, 25);
+}
+60%{
+    left:860px;
+    transform: rotate(225deg);
+    background-color: rgb(57, 161, 161);
+}
+80%{
+    left:1060px;
+    transform: rotate(270px);
+    background-color: darkgoldenrod;
+}
+100%{
+    left:60px;
+    transform: rotate(315deg);
+    background-color: rgb(63, 190, 63);
+}
+        }
+    </style>
+</head>
+<body>
+ <div class="container">
+
+    </div>
+ <div class="container">
+
+    </div>
+    <div class='welcome'> WELCOME </div>
+    <div class="text_edit">Iiitdm kurnool</div>
+
+    <div class="output"><pre>{{p}}</pre></div>
+ <div class="container">
+
+    </div>
+
+ <div class="container">
+
+    </div>
+
+    </div>
+
+</body>
+</html>

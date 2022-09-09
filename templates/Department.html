@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+           background-color: blueviolet;
+       }
+       .part2{
+           background-color:sandybrown;;
+       }
+       .header{
+           border: 4px solid rgb(170, 141, 141);
+           background-color: grey;
+           display: flex;
+           flex-direction: row;
+       }
+       ul{
+           display:flex;
+
+          list-style: none;
+       }
+       li{
+           text-shadow: 6px 6px 6px rgb(130, 95, 161);
+           margin:24px 20px 30px 20px;
+           list-style: none;
+
+       }
+       a{
+           text-decoration: none;
+       }
+
+       button{
+          width:120px;
+          height:30px;
+           border-radius: 220px;
+           background-color: rgb(139, 202, 120);
+           text-shadow: rgb(100, 75, 214);
+       }
+       .btn{
+          /* margin:30px 20px 30px 800px; */
+           position:absolute;
+           right:30px;
+           top:50px;
+
+       }
+       button{
+        cursor: pointer;
+       }
+       .container{
+           display:flex;
+justify-content: center;
+padding-bottom: 200px;;
+           background-color: sandybrown;
+
+       }
+       .box{
+           border: 4px solid rgb(165, 81, 81);
+           margin:140px 30px 30px 30px;
+           width: 390px;
+           padding: 40px;
+           box-shadow: 20px 20px 20px rgb(77, 53, 99);
+
+       }
+       .welcome{
+           background-color: sandybrown;
+           display: flex;
+           justify-content: center;
+           align-items:center;
+           text-align: center;
+           font-size: 50px;
+
+
+
+           position:relative;
+           font-family: cursive;
+           text-shadow: 4px 4px 4px blueviolet;
+          animation-name: p;
+           animation-duration: 6s;
+           animation-iteration-count: infinite;
+
+       }
+      @keyframes p{
+         0%{
+             left:0px;
+             top:0px
+         }
+         30%{
+             left:290px;
+             height:100px;
+         }
+         50%{
+             left:390px;
+             height:0px;
+         }
+         80%{
+             left:500px;
+             height:100px;
+
+         }
+         100%{
+             left:600px;
+             height:0px;
+         }
+
+       }
+       .li:hover{
+         transition-property: background-color;
+         background-color: rgb(139, 109, 109);
+         transition-duration: 1.2s;
+         transition-timing-function:ease-out;
+         /* transform: translateY(20px);*/
+         /*transform: skew(30deg);*/
+         transition-delay: 3px;
+         transform:rotate(360deg);
+         transform:skewX(10deg);
+
+
+
+       }
+
+
+       @media screen and (max-width:538px){
+           .header{
+               display: flex;
+               flex-wrap: wrap;
+               flex-direction: column;
+               background-color: chartreuse;
+
+           }
+           .btn{
+              position: static;
+              margin:10px 20px 20px 40px;
+
+           }
+           ul{
+               display: flex;
+               flex-wrap: wrap;
+           }
+           li{
+               margin-left: 5px;
+
+           }
+
+       }
+       @media screen and (max-width:1170px){
+           .box{
+               display: flex;
+
+           }
+           .container{
+               display:flex ;
+               flex-wrap: wrap;
+           }
+       }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <li><a href=" http://127.0.0.1:8000/"><button>Home</button></a></li>
+        <li><a href=" http://127.0.0.1:8000/scholarship"><button>Scholarship</button></a></li>
+        <li><a href=" http://127.0.0.1:8000/hostel"><button>hostel</button></a></li>
+        <li><a href=" http://127.0.0.1:8000/sports"><button>sports</button></a></li>
+        <li><a href=" http://127.0.0.1:8000/department"><button>Deparment</button></a></li>
+        <li><a href=" http://127.0.0.1:8000/mess"><button>Mess</button></a></li>
+        <li><a href=" http://127.0.0.1:8000/academics"><button>Academics</button></a></li>
+<div class="btn">
+<!-- <button>login </button> -->
+</div>
+    </div>
+    <div class="part2">
+    <div class="welcome">WELCOME</div>
+    <div class="container">
+        <div class="box">
+            <h1>CSE & AIDS</h1>
+
+          Name - Prof. D.V.L.N. Somayajulu ,<br>
+            Email Id- (director@iiitk.ac.in)
+            <br>
+          Name - Dr. K. Sathya Babu,<br>
+            Email Id- (ksb@iiitk.ac.in)
+            <br>
+            Dr. Renjith P.,<br>
+            Email Id- (renjith (at) iiitk (dot) ac (dot)in)
+            <br>
+          Name - Dr. K. Nagaraju<br>
+            Email Id- (knagaraju (at) iiitk (dot) ac (dot) in)
+            <br>
+          Name - Dr. Preeth R.,<br>
+            Email Id- (preeth (at) iiitk (dot) ac (dot) in)
+            <br>
+
+
+        </div>
+       <div class="box">
+           <h1>ECE</h1>
+         Name -
+               Dr. Mohamed Asan Basiri M., Ph.D. (IIITDM Kancheepuram)<br>
+            Email Id- asan (at) iiitk (dot) ac (dot) in
+            <br>
+          Name - Dr. Eswaramoorthy K. V., Ph.D. (IISc Bangalore),<br>
+            Email Id- eswaramoorthykv (at) iiitk (dot) ac (dot) in
+            <br>
+            Dr. Dr. K. Krishna Naik, Ph.D. (JNTUA Anantapur)<br>
+            Email Id- krishnanaik (at) iiitk (dot) ac (dot) in
+            <br>
+          Name - Dr. Yaswanth K.N.G.B, Ph.D. (IIT Madras)<br>
+            Email Id- yaswanthkngb (at) iiitk (dot) ac (dot) in
+            <br>
+          Name -Dr. Prahlada Rao B.B., Ph.D. (IISc Bangalore) ,<br>
+            Email Id- prahlad (at) iiitk (dot) ac (dot) in
+            <br>
+    </div>
+   <div class="box">
+       <h1>ME</h1>
+          Name -
+Dr. J. Krishnaiah, Ph.D. (IIT Kharagpur) ,<br>
+            Email Id- krishnaiah (at) iiitk  (dot) ac (dot) in
+            <br>
+          Name - Dr. K. Sathya Babu,<br>
+            Email Id- (ksb@iiitk.ac.in)
+            <br>
+          Name- Dr. Muvvala Pullarao, Ph.D. (IIT Madras),<br>
+            Email Id- muvvala (at) iiitk  (dot) ac (dot) in
+            <br>
+          Name -
+Dr. Mani Prakash, Ph.D. (TU, Dortmund, Germany) <br>
+            Email Id- smp (at) iiitk  (dot) ac (dot) in
+            <br>
+          Name -
+Dr. Akhtar Khan, Ph.D. (NIT Rourkela),<br>
+            Email Id- akhtar (at) iiitk  (dot) ac (dot) in
+            <br>
+        </div>
+
+    </div>
+    </div>
+
+
+</body>
+</html>
